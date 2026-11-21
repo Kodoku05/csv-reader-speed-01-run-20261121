@@ -29,6 +29,7 @@ export function run(input) {
       } else if (c === 13) {
         if (i > part) out += text.slice(part, i);
         out += '\n';
+        line++;
         if (text.charCodeAt(i + 1) === 10) i++;
         part = i + 1;
       } else if (c === 10) {
